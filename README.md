@@ -1,0 +1,2 @@
+# LinearRegression.ip
+In [1]: import numpy as np import matplotlib.pyplot as plt from sklearn.linear_model import LinearRegression In [2]: x = np.array([24,22,21,20,22,19,20,23,24,25]) y = np.array([10,5,6,3,6,4,5,9,11,13]) In [3]: linreg = LinearRegression() In [4]: x = x.reshape(-1, 1) In [5]: linreg.fit(x, y) Out[5]: LinearRegression() In [6]: y_pred = linreg.predict(x) In [7]: plt.scatter(x,y) plt.plot(x, y_pred, color='blue') plt.show()  In [8]: print(linreg.coef_) [1.55555556] In [9]: print(linreg.intercept_) -27.022222222222236 In [ ]:
